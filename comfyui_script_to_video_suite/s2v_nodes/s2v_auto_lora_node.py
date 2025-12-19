@@ -34,7 +34,7 @@ class AutoLoraLoader_S2V:
         Supports nested folders.
         """
         auto_map = {}
-        lora_root = folder_paths.get_folder_path("loras")
+        lora_root = folder_paths.get_folder_paths("loras")[0]
 
         for root, _, files in os.walk(lora_root):
             for filename in files:
